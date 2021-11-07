@@ -1,0 +1,10 @@
+# 企业微信机器人
+qyWechat:
+  key: xxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# www.screenshotmaster.com
+screenshot:
+  token: xxxxxxxxxxxxx
+
+# cron表达式，可以自定义时间
+cron: '0 50 7 * * *'

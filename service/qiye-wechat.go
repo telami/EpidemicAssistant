@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 )
 
@@ -52,4 +53,5 @@ func SendImageMessage(base64 string, md5 string, key string) {
 	}
 	client := http.Client{}
 	_, _ = client.Do(request)
+	log.Info("send image message successfully~")
 }
