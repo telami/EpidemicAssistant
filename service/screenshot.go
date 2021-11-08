@@ -16,13 +16,13 @@ import (
 func Screenshot(token string) string {
 
 	url := url2.QueryEscape("https://vt.sm.cn/api/NCoVInfo/riskArea#/risk-areas")
-	width := 1280
-	height := 800
+	width := 375
+	height := 812
 	fullPage := 1
 
 	// 构造URL
 	query := "https://www.screenshotmaster.com/api/v1/screenshot"
-	query += fmt.Sprintf("?token=%s&url=%s&width=%d&height=%d&full_page=%d",
+	query += fmt.Sprintf("?token=%s&url=%s&width=%d&height=%d&zone=gz&fresh=1&full_page=%d&device=mobile&delay=5000",
 		token, url, width, height, fullPage)
 
 	// 调用API
